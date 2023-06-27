@@ -1,0 +1,91 @@
+@import "@/assets/css/varibles.scss";
+
+@font-face {
+  font-family: "Work Sans";
+  src: url("@/assets/fonts/WorkSans-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("@/assets/fonts/Oswald-VariableFont_wght.ttf");
+}
+
+.Aboutus {
+  background: url("@/assets/images/photo_2023-06-27_14-26-37.jpg") no-repeat;
+  background-position: center center;
+  background-size: 100% 100%;
+  padding: 190px 0 0 0;
+}
+
+.Aboutus-text {
+  margin-bottom: 146px;
+  text-align: center;
+  &__h1 {
+    color: #fff;
+    @include adaptiv-font(82, 32);
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  &__p {
+    color: #fff;
+    text-align: center;
+    @include adaptiv-font(24, 18);
+    font-family: "Work Sans", sans-serif;
+    line-height: 150%;
+  }
+}
+.Aboutus-about {
+  &__h1 {
+    color: $brown;
+    font-size: 82px;
+    font-family: "Work Sans", sans-serif;
+    font-weight: 700;
+  }
+
+  &__p {
+    color: #fff;
+    font-size: 60px;
+    font-family: "Cormorant";
+    line-height: 64px;
+    letter-spacing: 1.2px;
+    text-transform: uppercase;
+    max-width: 384px;
+    width: 100%;
+    margin-bottom: 200px;
+  }
+
+  &__new {
+    color: #fff;
+    font-size: 36px;
+    font-family: "Oswald";
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    margin-bottom: 82px;
+  }
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+  &__h1 {
+    color: #fff;
+    font-size: 20px;
+    font-family: "Oswald";
+    line-height: 26px;
+    letter-spacing: 0.4px;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+  }
+
+  &__p {
+    max-width: 660px;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    font-family: Oswald;
+    line-height: 26px;
+    letter-spacing: 0.8px;
+  }
+}

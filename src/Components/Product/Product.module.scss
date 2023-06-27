@@ -1,0 +1,61 @@
+@import "@/assets/css/varibles.scss";
+
+.product {
+  margin-top: 20px;
+  padding: 20px 0;
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  &__image {
+    width: 100%;
+  }
+  .info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-transform: uppercase;
+    p {
+      font-size: 18px;
+    }
+    &__description {
+      max-width: 400px;
+    }
+
+    &__price {
+      font-family: "Gotham";
+      margin: 20px 0;
+      font-size: 20px;
+      font-weight: 400;
+      &::after {
+        content: "$";
+      }
+    }
+    &__button {
+      background: $brown;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      color: $white;
+      border-radius: 60px;
+      max-width: 300px;
+      width: 100%;
+      margin-top: 20px;
+      padding: 15px 50px;
+      border: none;
+    }
+  }
+
+  @media (max-width: 475px) {
+    &__image {
+      width: 100%;
+    }
+  }
+
+  .line {
+    text-decoration: line-through;
+  }
+}

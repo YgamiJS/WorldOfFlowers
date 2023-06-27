@@ -1,0 +1,134 @@
+@import "@/assets/css/varibles.scss";
+
+.Interior {
+  background-image: url("@/assets/images/photo_2023-06-26_17-41-49.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  padding: 20px 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  &__text {
+    text-align: center;
+    h1 {
+      color: $white;
+      @include adaptiv-font(82, 36);
+      font-weight: 900;
+    }
+    p {
+      color: $white;
+      margin: 20px 0;
+      font-weight: 400;
+    }
+  }
+}
+
+.Advantages {
+  padding-top: 60px;
+  margin-bottom: 193px;
+
+  @media (max-width: 767px) {
+    margin-bottom: 60px;
+  }
+  &__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    gap: 15px 0;
+  }
+  &__item {
+    display: flex;
+    color: $white;
+    align-items: center;
+    gap: 0 15px;
+    .Advantage__name {
+      font-weight: 600;
+    }
+  }
+}
+
+.Products {
+  margin-bottom: 140px;
+  &__text {
+    margin: 20px 0;
+    h1 {
+      @include adaptiv-font(76, 32);
+    }
+
+    a {
+      display: flex;
+      color: #4f4f4f;
+      gap: 0 27.75px;
+      &::after {
+        content: url("@/assets/images/arrow.png");
+      }
+    }
+  }
+}
+
+.Reference {
+  margin: 50px 0;
+  &__text {
+    margin: 20px;
+    text-align: center;
+    h1 {
+      color: $white;
+      @include adaptiv-font(64, 32);
+      font-weight: 600;
+    }
+
+    p {
+      color: #9a9898;
+    }
+  }
+
+  &__refs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 50px;
+
+    a {
+      position: relative;
+
+      & p {
+        @media (max-width: 475px) {
+          word-break: break-all;
+        }
+        @include adaptiv-font(64, 28);
+        font-weight: 600;
+        color: $white;
+        width: auto;
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .big {
+      max-width: 700px;
+      height: 615px;
+      border-radius: 30px;
+    }
+
+    .medium {
+      max-width: 430.11px;
+      border-radius: 30px;
+      height: 645.17px;
+    }
+
+    @media (max-width: 940px) {
+      .big,
+      .medium {
+        width: 100%;
+      }
+    }
+  }
+}

@@ -1,0 +1,13 @@
+@import "@/assets/css/varibles.scss";
+
+.shop {
+  padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px 0;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: url("@/assets/fonts/Oswald-VariableFont_wght.ttf");
+}
